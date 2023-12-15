@@ -2,6 +2,8 @@ package vttp.ssf.assessment.eventmanagement.repositories;
 
 import org.springframework.stereotype.Repository;
 
+import jakarta.json.stream.JsonParser.Event;
+
 @Repository
 public class RedisRepository {
 
@@ -22,7 +24,7 @@ public class RedisRepository {
 
 
 	 //TODO: Task 4
-public Event getEvent(Integer index){
+public void getEvent(Integer index){
 
 }
 }
