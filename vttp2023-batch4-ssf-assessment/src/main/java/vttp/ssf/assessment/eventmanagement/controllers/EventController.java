@@ -17,13 +17,12 @@ public class EventController {
 
 		return "view0";
 	}
-  @PostMapping("/second") {
+  @PostMapping("/second") 
 public String register(Model model){
-	
 return "view1";
 }
-  }
-	
 
+  
+	
 
 }
