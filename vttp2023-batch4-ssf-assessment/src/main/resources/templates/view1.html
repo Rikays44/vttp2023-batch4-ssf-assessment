@@ -8,35 +8,37 @@
 <body>
     <h1>Register event</h1>
 
-    <form action="register" method="post">
+    <form th:action="register" method="post" th:object="${user}">
         <label for="fullname">Full Name</label>
         <br>
-        <input type="text" field="fullname">
+        <input type="text" th:field="*{fullname}">
         <br>
         <br>
         <label for="dob">DOB</label>
         <br>
-        <input type="date" field="dob">
+        <input type="date" th:field="*{dob}">
         <br>
         <br>
         <label for="email">Email</label>
         <br>
-        <input type="email" field="email">
+        <input type="email" th:field="*{email}">
         <br>
         <br>
         <label for="mobileNum">Mobile Number</label>
         <br>
-        <input type="text" field="mobileNum">
+        <input type="text" th:field="*{mobileNum}">
         <br>
         <br>
         <label for="gender">Gender</label>
         <br>
-        <input type="text" field="gender">
+        <input type="text" th:field="*{gender}">
         <br>
         <br>
         <label for="ticketNum">Number of Tickets</label>
         <br>
-        <input type="text" field="ticketNum">
+        <input type="text" th:field="*{ticketNum}">
+         <br>
+         <button type="submit">Register</button>
     </form>
     
 </body>

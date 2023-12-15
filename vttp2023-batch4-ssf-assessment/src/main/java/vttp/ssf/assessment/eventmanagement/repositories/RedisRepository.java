@@ -5,16 +5,23 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class RedisRepository {
 
-	// TODO: Task 2
- public void saveRecord(Event event){
+	 TODO: Task 2
+	public void saveRecord(Event event){
 
-	private String hashRef = 
- }
+	}
+ 
+	
+	
+ 
 
-	// TODO: Task 3
+	 TODO: Task 3
+ public Integer getNumberOfEvents(){
+	 return 1;
 
+  }
 
 }
+	 TODO: Task 4
+public Event getEvent(Integer index){
 
-	// TODO: Task 4
 }
